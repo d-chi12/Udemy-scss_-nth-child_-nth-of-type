@@ -1,0 +1,55 @@
+a {
+  color: orange;
+
+  &:visited {
+    color: blue;
+  }
+
+  &:hover {
+    color: red;
+  }
+
+  &:focus {
+    color: green;
+  }
+
+  &:active {
+    color: purple;
+  }
+}
+
+div {
+  & span {
+    color: olive;
+
+    // &:nth-child(1) {
+    //   color: purple;
+    // }
+
+    // &:nth-child(2) {
+    //   color: green;
+    // }
+
+    // &:nth-child(3) {
+    //   color: blue;
+    // }
+
+    // 偶数、奇数、倍数の表示
+    // &:nth-child(2n，even)  　　偶数(2の倍数)
+    // &:nth-child(2n + 1, odd)  奇数、整数値の倍数
+
+    &:nth-of-type(1) {
+        color: purple;
+      }
+  
+      &:nth-of-type(2) {
+        color: green;
+      }
+  
+      &:nth-of-type(3) {
+        color: blue;
+      }
+  
+  }
+
+}
